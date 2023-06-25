@@ -1,0 +1,38 @@
+:root {
+    --button-spacing: 0.75rem;
+    --nav-margin: 1.2rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: horizontal;
+    gap: var(--button-spacing);
+    margin-top: var(--nav-margin);
+    margin-bottom: var(--nav-margin);
+}
+
+nav div {
+    padding: var(--button-spacing);
+    background-color: rgb(249, 250, 251);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+nav div:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
