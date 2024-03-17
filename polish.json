@@ -1,0 +1,167 @@
+{
+    "phrases": [
+        {
+            "polish": "Na zdrowie",
+            "english": ["Cheers"]
+        },
+        {
+            "polish": "Dzień dobry",
+            "english": ["Good morning"]
+        },
+        {
+            "polish": "Przepraszam",
+            "english": ["Excuse me", "I'm Sorry"]
+        },
+        {
+            "polish": "Proszę",
+            "english": ["Please"]
+        },
+        {
+            "polish": "Dziękuję",
+            "english": ["Thank you"]
+        },
+        {
+            "polish": "Proszę napisać na tablicy",
+            "english": ["Please write this on the whiteboard"]
+        },
+        {
+            "polish": "Proszę powtórzyć",
+            "english": ["Please repeat"]
+        },
+        {
+            "polish": "Proszę przeczytać",
+            "english": ["Please read this"]
+        },
+        {
+            "polish": "Nie wiem",
+            "english": ["I don't know"]
+        },
+        {
+            "polish": "Nie rozumiem",
+            "english": ["I don't understand"]
+        },
+        {
+            "polish": "jak jest po polsku",
+            "english": ["what is in polish"]
+        }
+    ],
+    "numbers": [
+        {
+            "polish": "Zero",
+            "english": ["Zero", "0"]
+        },
+        {
+            "polish": "Jeden",
+            "english": ["One", "1"]
+        },
+        {
+            "polish": "Dwa",
+            "english": ["Two", "2"]
+        },
+        {
+            "polish": "Trzy",
+            "english": ["Three", "3"]
+        },
+        {
+            "polish": "Cztery",
+            "english": ["Four", "4"]
+        },
+        {
+            "polish": "Pięć",
+            "english": ["Five", "5"]
+        },
+        {
+            "polish": "Sześć",
+            "english": ["Six", "6"]
+        },
+        {
+            "polish": "Siedem",
+            "english": ["Seven", "7"]
+        },
+        {
+            "polish": "Osiem",
+            "english": ["Eight", "8"]
+        },
+        {
+            "polish": "Dziewięć",
+            "english": ["Nine", "9"]
+        },
+        {
+            "polish": "Dziesięć",
+            "english": ["Ten", "10"]
+        },
+        {
+            "polish": "Jedenaście",
+            "english": ["Eleven", "11"]
+        },
+        {
+            "polish": "Dwanaście",
+            "english": ["Twelve", "12"]
+        },
+        {
+            "polish": "Trzynaście",
+            "english": ["Thirteen", "13"]
+        },
+        {
+            "polish": "Czternaście",
+            "english": ["Fourteen", "14"]
+        },
+        {
+            "polish": "Piętnaście",
+            "english": ["Fifteen", "15"]
+        },
+        {
+            "polish": "Szesnaście",
+            "english": ["Sixteen", "16"]
+        },
+        {
+            "polish": "Siedemnaście",
+            "english": ["Seventeen", "17"]
+        },
+        {
+            "polish": "Osiemnaście",
+            "english": ["Eighteen", "18"]
+        },
+        {
+            "polish": "Dziewiętnaście",
+            "english": ["Nineteen", "19"]
+        },
+        {
+            "polish": "Dwadzieścia",
+            "english": ["Twenty", "20"]
+        },
+        {
+            "polish": "Trzydzieści",
+            "english": ["Thirty", "30"]
+        },
+        {
+            "polish": "Czterdzieści",
+            "english": ["Forty", "40"]
+        },
+        {
+            "polish": "Pięćdziesiąt",
+            "english": ["Fifty", "50"]
+        },
+        {
+            "polish": "Sześćdziesiąt",
+            "english": ["Sixty", "60"]
+        },
+        {
+            "polish": "Siedemdziesiąt",
+            "english": ["Seventy", "70"]
+        },
+        {
+            "polish": "Osiemdziesiąt",
+            "english": ["Eighty", "80"]
+        },
+        {
+            "polish": "Dziewięćdziesiąt",
+            "english": ["Ninety", "90"]
+        },
+        {
+            "polish": "Sto",
+            "english": ["One Hundred", "100"]
+        }
+
+    ]
+}

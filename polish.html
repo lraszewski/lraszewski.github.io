@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polish</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Polish Vocab 
+        </h1>
+        <p>This is a teaching aid to help me practice polish vocabulary. It is heavily inspired by the Vocab Tester in the Cambridge Latin Course.</p>
+        <p>Please let me know if you have any issues or suggestions.</p>
+    </header>
+    <nav>
+        <a href="/">
+            <div>
+                <i class="bi-arrow-left"></i>
+                Back
+            </div>
+        </a>
+    </nav>
+    <main>
+        <h2>Options</h2>
+        <form id="setsForm">
+            <label>
+                <input type="checkbox" name="Phrases" value="phrases" checked>
+                Phrases
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="Numbers" value="numbers" checked>
+                Numbers
+            </label>
+        </form>
+        <br></br>
+        <h1 id="prompt"></h1>
+        <input id="answer" type="text" placeholder="Type your translation here, then hit enter." autocomplete="off"></input>
+        <h2 id="expectedAnswer" class="hidden">Accepted Answers: </h2>
+        <p id="incorrectMessage" class="hidden">Press enter to continue.</p>
+    </main>
+    <footer>
+    </footer>
+    <script src="polish.js"></script>
+</body>
+</html>

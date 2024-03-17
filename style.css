@@ -1,6 +1,11 @@
 :root {
     --button-spacing: 0.75rem;
     --nav-margin: 1.2rem;
+    --button-colour: rgb(249, 250, 251);
+    --button-hover-colour: rgb(235, 235, 235);
+    --button-border-radius: 0.5rem;
+    --incorrect: rgb(230, 76, 76);
+    --correct: rgb(81, 231, 126);
 }
 
 body {
@@ -22,17 +27,37 @@ nav {
 
 nav div {
     padding: var(--button-spacing);
-    background-color: rgb(249, 250, 251);
-    border-radius: 0.5rem;
+    background-color: var(--button-colour);
+    border-radius: var(--button-border-radius);
     transition: 0.3s;
 }
 
 nav div:hover {
-    background-color: rgb(235, 235, 235);
+    background-color: var(--button-hover-colour);
     cursor: pointer;
 }
 
 nav a {
     text-decoration: none;
     color: inherit;
+}
+
+#answer {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--button-colour);
+    border: none;
+    border-radius: var(--button-border-radius);
+}
+
+.incorrect {
+    outline: 5px solid var(--incorrect);
+}
+
+.correct {
+    outline: 5px solid var(--correct);
+}
+
+.hidden {
+    visibility: hidden;
 }
