@@ -33,20 +33,50 @@
         </a>
     </nav>
     <main>
-        <h2>Options</h2>
-        <form id="setsForm">
-            <label>
-                <input type="checkbox" name="Phrases" value="phrases" checked>
-                Phrases
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="Numbers" value="numbers" checked>
-                Numbers
-            </label>
-        </form>
+        <div class="options">
+            <form id="setsForm">
+                <h3>Vocab Sets</h3>
+                <label>
+                    <input type="checkbox" name="Phrases" value="phrases" checked>
+                    Phrases
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="Numbers" value="numbers" checked>
+                    Numbers
+                </label>
+            </form>
+            <form id="testForm">
+                <h3>Test Options</h3>
+                <label>
+                    <input type="radio" name="testSize" value="10" checked>10 Words
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="testSize" value="50">50 Words
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="testSize" value="100">100 words
+                </label>
+                <br>
+                <br>
+                <label>
+                    <input type="checkbox" name="PolishToEnglish" value="polishToEnglish" checked disabled>
+                    Polish to English
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="EnglishToPolish" value="englishToPolish" disabled>
+                    English to Polish
+                </label>
+            </form>
+        </div>
         <br></br>
-        <h1 id="prompt"></h1>
+        <div id="prompt-header">
+            <h1 id="prompt"></h1>
+            <progress id="testProgress" value="0" max="10"></progress>
+        </div>
         <input id="answer" type="text" placeholder="Type your translation here, then hit enter." autocomplete="off"></input>
         <h2 id="expectedAnswer" class="hidden">Accepted Answers: </h2>
         <p id="incorrectMessage" class="hidden">Press enter to continue.</p>

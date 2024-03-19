@@ -24,7 +24,12 @@ async function populatePrompt() {
     if (test.length == 0) {
         // regenerate test
         selectedSets = getSelectedSets();
-        test = generateTest(selectedSets);
+        testSize = getTestSize();
+        test = generateTest(selectedSets, testSize);
+
+        const progressBar = document.getElementById("testProgress");
+        progressBar.value = 0;
+        console.log("test complete");
     }
 }
 
@@ -46,6 +51,9 @@ function checkAnswer() {
         document.getElementById("expectedAnswer").innerHTML = joinAnswers(currentTranslations);
         document.getElementById("incorrectMessage").classList.remove("hidden");
     }
+
+    const progressBar = document.getElementById("testProgress");
+    progressBar.value = progressBar.value + 1;
 }
 
 // Format text for a fair comparison
@@ -106,31 +114,55 @@ function selectAllSets() {
     });
 }
 
-function generateTest(selectedSets) {
+function generateTest(selectedSets, testSize) {
     test = []
     selectedSets.forEach(set => {
         if (vocab.hasOwnProperty(set)) {
             test.push(...vocab[set]);
         }
     })
+    test = test.sort(() => Math.random() - 0.5)
+    if (testSize != null) {
+        test = test.slice(0, testSize);
+    }
     return test
 }
 
 function handleSetsFormUpdate(event) {
     selectedSets = getSelectedSets();
+    testSize = getTestSize();
     if (selectedSets.length == 0) {
         selectAllSets();
         selectedSets = getSelectedSets();
     }
-    test = generateTest(selectedSets);
+    test = generateTest(selectedSets, testSize);
     populatePrompt();
 }
+
+function handleTestFormUpdate(event) {
+    selectedSets = getSelectedSets();
+    testSize = getTestSize();
+    test = generateTest(selectedSets, testSize);
+    const progressBar = document.getElementById("testProgress");
+    progressBar.setAttribute("max", testSize);
+    progressBar.setAttribute("value", 0);
+    populatePrompt();
+}
+
+function getTestSize() {
+    return document.querySelector('input[name="testSize"]:checked').value;
+}
+
 
 window.onload = async function() {
     vocab = await getVocab();
     selectedSets = getSelectedSets();
-    test = generateTest(selectedSets);
+    testSize = getTestSize();
+    test = generateTest(selectedSets, testSize);
+
     populatePrompt();
+
     document.getElementById('answer').addEventListener('keydown', handleKeyDown);
     document.getElementById('setsForm').addEventListener('change', handleSetsFormUpdate);
+    document.getElementById('testForm').addEventListener('change', handleTestFormUpdate);
 };

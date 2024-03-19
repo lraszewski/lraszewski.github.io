@@ -48,6 +48,8 @@ nav a {
     background-color: var(--button-colour);
     border: none;
     border-radius: var(--button-border-radius);
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .incorrect {
@@ -60,4 +62,36 @@ nav a {
 
 .hidden {
     visibility: hidden;
+}
+
+.options {
+    display: grid;
+    gap: var(--button-spacing);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#prompt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+progress {
+    border: none;
+    border-radius: var(--button-border-radius);
+    height: 0.5rem;
+    background-color: var(--button-colour);
+}
+progress {
+    color: black;
+}
+progress::-moz-progress-bar {
+    background: black;
+}
+progress::-webkit-progress-value {
+    background: black;
+}
+progress::-webkit-progress-bar {
+    background: black;
 }
