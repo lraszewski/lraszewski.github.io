@@ -33,21 +33,19 @@
         </a>
     </nav>
     <main>
-        <div class="options">
-            <form id="setsForm">
+        <form class="options" id="testForm">
+            <section>
                 <h3>Vocab Sets</h3>
                 <label>
-                    <input type="checkbox" name="Phrases" value="phrases" checked>
-                    Phrases
+                    <input type="checkbox" name="vocabSets" value="phrases" checked>Phrases
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="Numbers" value="numbers" checked>
-                    Numbers
+                    <input type="checkbox" name="vocabSets" value="numbers" checked>Numbers
                 </label>
-            </form>
-            <form id="testForm">
-                <h3>Test Options</h3>
+            </section>
+            <section>
+                <h3>Test Size</h3>
                 <label>
                     <input type="radio" name="testSize" value="10" checked>10 Words
                 </label>
@@ -59,19 +57,44 @@
                 <label>
                     <input type="radio" name="testSize" value="100">100 words
                 </label>
-                <br>
-                <br>
+            </section>
+            <section>
+                <h3>Test Type</h3>
                 <label>
-                    <input type="checkbox" name="PolishToEnglish" value="polishToEnglish" checked disabled>
-                    Polish to English
+                    <input type="radio" name="testType" value="typeIn" checked disabled>Type In
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="EnglishToPolish" value="englishToPolish" disabled>
-                    English to Polish
+                    <input type="radio" name="testType" value="multipleChoice" disabled>Multiple Choice
                 </label>
-            </form>
-        </div>
+                <br><br>
+                <label>
+                    <input type="radio" name="testLanguage" value="polishToEnglish" checked disabled>Polish to English
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="testLanguage" value="englishToPolish" disabled>English to Polish
+                </label>
+            </section>
+            <section>
+                <h3>Seconds per Word</h3>
+                <label>
+                    <input type="radio" name="secondsPerWord" value="0" checked disabled>No Limit
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="secondsPerWord" value="3" disabled>3
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="secondsPerWord" value="5" disabled>5
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="secondsPerWord" value="10" disabled>10
+                </label>
+            </section>
+        </form>
         <br></br>
         <div id="prompt-header">
             <h1 id="prompt"></h1>

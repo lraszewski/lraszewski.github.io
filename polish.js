@@ -3,35 +3,12 @@ let currentPrompt = "";
 let currentTranslations = [];
 let incorrectState = false;
 let vocab = null
+
+// test parameters
 let test = []
-
-// Get JSON data from vocab file
-async function getVocab() {
-    const response = await fetch('polish.json');
-    const vocab = await response.json();
-    return vocab;
-}
-
-// Populate the prompt randomly with polish
-async function populatePrompt() {
-    const randomIndex = Math.floor(Math.random() * test.length);
-    currentPrompt = test[randomIndex].polish;
-    currentTranslations = test[randomIndex].english;
-    document.getElementById('prompt').textContent = currentPrompt;
-
-    // remove item from list.
-    test.splice(randomIndex, 1);
-    if (test.length == 0) {
-        // regenerate test
-        selectedSets = getSelectedSets();
-        testSize = getTestSize();
-        test = generateTest(selectedSets, testSize);
-
-        const progressBar = document.getElementById("testProgress");
-        progressBar.value = 0;
-        console.log("test complete");
-    }
-}
+let testType = "multipleChoice"
+let testLanguage = "polishToEnglish"
+let secondsPerWord = 0
 
 // Check the answer submitted
 function checkAnswer() {
@@ -64,21 +41,6 @@ function format(item) {
     return item
 }
 
-// Listen for when the enter key is pressed
-function handleKeyDown(event) {
-    if (event.key === "Enter" && !incorrectState) {
-        checkAnswer();
-    }
-    else if (event.key === "Enter") {
-        incorrectState = false;
-        document.getElementById("answer").classList.remove('incorrect');
-        document.getElementById("expectedAnswer").classList.add("hidden");
-        document.getElementById("incorrectMessage").classList.add("hidden");
-        document.getElementById('answer').value = '';
-        populatePrompt();
-    }
-}
-
 // Returns a list of possible answers as a comma separated string
 function joinAnswers(answers) {
     if (answers.length === 0) {
@@ -93,76 +55,120 @@ function joinAnswers(answers) {
     }
 }
 
-// Returns a list of the selected vocab sets.
-function getSelectedSets() {
-    const form = document.getElementById('setsForm');
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-    const selectedSets = [];
-    checkboxes.forEach(function(checkbox) {
-        if (checkbox.checked) {
-            selectedSets.push(checkbox.value);
-        }
-    });
-    return selectedSets;
+// Get JSON data from vocab file
+async function getVocab() {
+    const response = await fetch('polish.json');
+    return await response.json();
 }
 
-function selectAllSets() {
-    const form = document.getElementById('setsForm');
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(function(checkbox) {
+function selectAllVocabSets() {
+    checkboxes = document.getElementsByName("vocabSets");
+    checkboxes.forEach(checkbox => {
         checkbox.checked = true;
     });
 }
 
-function generateTest(selectedSets, testSize) {
-    test = []
-    selectedSets.forEach(set => {
-        if (vocab.hasOwnProperty(set)) {
-            test.push(...vocab[set]);
-        }
-    })
-    test = test.sort(() => Math.random() - 0.5)
-    if (testSize != null) {
-        test = test.slice(0, testSize);
-    }
-    return test
-}
-
-function handleSetsFormUpdate(event) {
-    selectedSets = getSelectedSets();
-    testSize = getTestSize();
-    if (selectedSets.length == 0) {
-        selectAllSets();
-        selectedSets = getSelectedSets();
-    }
-    test = generateTest(selectedSets, testSize);
-    populatePrompt();
-}
-
-function handleTestFormUpdate(event) {
-    selectedSets = getSelectedSets();
-    testSize = getTestSize();
-    test = generateTest(selectedSets, testSize);
-    const progressBar = document.getElementById("testProgress");
-    progressBar.setAttribute("max", testSize);
-    progressBar.setAttribute("value", 0);
-    populatePrompt();
+function getVocabSets() {
+    return Array.from(document.querySelectorAll("input[name='vocabSets']:checked")).map((elem) => elem.value)
 }
 
 function getTestSize() {
     return document.querySelector('input[name="testSize"]:checked').value;
 }
 
+function getTestType() {
+    return document.querySelector('input[name="testType"]:checked').value;
+}
+
+function getTestLanguage() {
+    return document.querySelector('input[name="testLanguage"]:checked').value;
+}
+
+function getSecondsPerWord() {
+    return document.querySelector('input[name="secondsPerWord"]:checked').value;
+}
+
+// set all global test parameters
+function generateTest() {
+
+    // get test parameters
+    vocabSets = getVocabSets();
+    testSize = getTestSize();
+    testType = getTestType();
+    testLanguage = getTestLanguage();
+    secondsPerWord = getSecondsPerWord();
+
+    // check for empty vocab sets
+    if (vocabSets.length == 0) {
+        selectAllVocabSets();
+        vocabSets = getVocabSets();
+    }
+
+    // build, shuffle and trim test vocab
+    test = []
+    while (test.length < testSize) {
+        vocabSets.forEach(set => {
+            if (vocab.hasOwnProperty(set)) {
+                test.push(...vocab[set]);
+            }
+        })
+    }
+    test = test.sort(() => Math.random() - 0.5)
+    test = test.slice(0, testSize);
+
+    // reset test progress bar
+    const progressBar = document.getElementById("testProgress");
+    progressBar.setAttribute("max", testSize);
+    progressBar.setAttribute("value", 0);
+}
+
+function populatePrompt() {
+
+    // check if test is completed
+    if (test.length == 0) {
+        generateTest();
+    }
+
+    // grab a new question and populate
+    question = test.pop();
+    if (testLanguage = "polishToEnglish") {
+        currentPrompt = question.polish;
+        currentTranslations = question.english;
+    }
+    else {
+        currentPrompt = question.english;
+        currentTranslations = question.polish;
+    }
+    document.getElementById('prompt').textContent = currentPrompt;
+}
+
+
+// when an answer is submitted, check, or dismiss incorrect state
+function handleKeyDown(event) {
+    if (event.key === "Enter" && !incorrectState) {
+        checkAnswer();
+    }
+    else if (event.key === "Enter") {
+        incorrectState = false;
+        document.getElementById("answer").classList.remove('incorrect');
+        document.getElementById("expectedAnswer").classList.add("hidden");
+        document.getElementById("incorrectMessage").classList.add("hidden");
+        document.getElementById('answer').value = '';
+        populatePrompt();
+    }
+}
+
+// when the test form changes, update the global test parameters and begin
+function handleTestFormUpdate(event) {
+    generateTest();
+    populatePrompt();
+}
 
 window.onload = async function() {
     vocab = await getVocab();
-    selectedSets = getSelectedSets();
-    testSize = getTestSize();
-    test = generateTest(selectedSets, testSize);
-
+    generateTest();
     populatePrompt();
 
     document.getElementById('answer').addEventListener('keydown', handleKeyDown);
-    document.getElementById('setsForm').addEventListener('change', handleSetsFormUpdate);
     document.getElementById('testForm').addEventListener('change', handleTestFormUpdate);
 };
