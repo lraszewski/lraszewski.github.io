@@ -14,7 +14,19 @@ let secondsPerWord = 0
 function checkAnswer() {
     const userAnswer = format(document.getElementById('answer').value);
     
-    if (currentTranslations.map(format).includes(userAnswer)) {
+    correct = false
+    if (Array.isArray(currentTranslations)) {
+        if (currentTranslations.map(format).includes(userAnswer)) {
+            correct = true;
+        }
+    }
+    else {
+        if (format(currentTranslations) == userAnswer) {
+            correct = true;
+        }
+    }
+
+    if (correct) {
         document.getElementById("answer").classList.add('correct');
         setTimeout(() => {
             document.getElementById("answer").classList.remove('correct');
@@ -38,21 +50,42 @@ function format(item) {
     item = item.trim().toLowerCase()
     item = item.replace(/[.',\/#!$%\^&\*;:{}=\-_`~()]/g,"")
     item = item.replace(/\s+/g, " ")
+    item = item.normalize("NFD").replace(/\p{Diacritic}/gu, "")
     return item
 }
 
 // Returns a list of possible answers as a comma separated string
 function joinAnswers(answers) {
-    if (answers.length === 0) {
-        return '';
-    } else if (answers.length === 1) {
-        return answers[0];
-    } else if (answers.length === 2) {
-        return answers.join(' or ');
-    } else {
-        const lastWord = words.pop();
-        return answers.join(', ') + ', or ' + lastWord;
+
+    if (!Array.isArray(answers)) {
+        return answers;
     }
+
+    if (answers.length == 0) {
+        return '';
+    }
+
+    if (answers.length == 1) {
+        return answers[0];
+    }
+
+    return answers.join(', ')
+
+ 
+
+
+
+
+    // if (answers.length === 0) {
+    //     return '';
+    // } else if (answers.length === 1) {
+    //     return answers[0];
+    // } else if (answers.length === 2) {
+    //     return answers.join(' or ');
+    // } else {
+    //     const lastWord = answers.pop();
+    //     return answers.join(', ') + ', or ' + lastWord;
+    // }
 }
 
 // Get JSON data from vocab file
@@ -131,7 +164,7 @@ function populatePrompt() {
 
     // grab a new question and populate
     question = test.pop();
-    if (testLanguage = "polishToEnglish") {
+    if (testLanguage == "polishToEnglish") {
         currentPrompt = question.polish;
         currentTranslations = question.english;
     }
@@ -139,23 +172,34 @@ function populatePrompt() {
         currentPrompt = question.english;
         currentTranslations = question.polish;
     }
+
+    // handle prompts that are lists
+    if (Array.isArray(currentPrompt)) {
+        currentPrompt = joinAnswers(currentPrompt);
+    }
+
     document.getElementById('prompt').textContent = currentPrompt;
 }
 
 
 // when an answer is submitted, check, or dismiss incorrect state
 function handleKeyDown(event) {
-    if (event.key === "Enter" && !incorrectState) {
+
+    if (event.key != "Enter") {
+        return;
+    }
+
+    if (!incorrectState) {
         checkAnswer();
+        return;
     }
-    else if (event.key === "Enter") {
-        incorrectState = false;
-        document.getElementById("answer").classList.remove('incorrect');
-        document.getElementById("expectedAnswer").classList.add("hidden");
-        document.getElementById("incorrectMessage").classList.add("hidden");
-        document.getElementById('answer').value = '';
-        populatePrompt();
-    }
+
+    incorrectState = false;
+    document.getElementById("answer").classList.remove('incorrect');
+    document.getElementById("expectedAnswer").classList.add("hidden");
+    document.getElementById("incorrectMessage").classList.add("hidden");
+    document.getElementById('answer').value = '';
+    populatePrompt();
 }
 
 // when the test form changes, update the global test parameters and begin
