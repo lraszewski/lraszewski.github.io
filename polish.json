@@ -42,7 +42,47 @@
         },
         {
             "polish": "jak jest po polsku",
-            "english": ["what is in polish"]
+            "english": ["what is in Polish"]
+        },
+        {
+            "polish": "Przejemność po mojej stronie",
+            "english": ["It's my pleasure"]
+        },
+        {
+            "polish": "Nie szkodzi",
+            "english": ["Nevermind"]
+        },
+        {
+            "polish": "Nie ma znaczenia",
+            "english": ["It doesn't matter"]
+        },
+        {
+            "polish": "ładnie wyglądasz",
+            "english": ["You look nice"]
+        },
+        {
+            "polish": "Jak się masz?",
+            "english": ["How are you?"]
+        },
+        {
+            "polish": "Jak się czujesz?",
+            "english": ["How are you feeling"]
+        },
+        {
+            "polish": "Proszę częstuj się",
+            "english": ["Please help yourself"]
+        },
+        {
+            "polish": "Kto to jest?",
+            "english": ["Who is that?"]
+        },
+        {
+            "polish": "Co to jest?",
+            "english": ["what is that?"]
+        },
+        {
+            "polish": "Czy mówisz po angielsku?",
+            "english": ["Do you speak English?"]
         }
     ],
     "numbers": [
@@ -162,6 +202,323 @@
             "polish": "Sto",
             "english": ["One Hundred", "100"]
         }
-
+    ],
+    "adjectives": [
+        {
+            "polish": "Pracowity",
+            "english": ["Diligent", "Hardworking"]
+        },
+        {
+            "polish": "Zmęczony",
+            "english": ["Tired"]
+        },
+        {
+            "polish": "Wypoczęty",
+            "english": ["Refreshed"]
+        },
+        {
+            "polish": "Wesoły",
+            "english": ["Cheerful"]
+        },
+        {
+            "polish": "Głodny",
+            "english": ["Hungry"]
+        },
+        {
+            "polish": "Wysoki",
+            "english": ["Tall"]
+        },
+        {
+            "polish": "Niski",
+            "english": ["Short"]
+        },
+        {
+            "polish": "średniego wzrostu",
+            "english": ["Medium height"]
+        },
+        {
+            "polish": "Młody",
+            "english": ["Young"]
+        },
+        {
+            "polish": "w średnim wieku",
+            "english": ["Middle ages"]
+        },
+        {
+            "polish": "w Podeszłym wieku",
+            "english": ["Elderly"]
+        },
+        {
+            "polish": "Cierpliwy",
+            "english": ["Patient"]
+        },
+        {
+            "polish": "Nerwowy",
+            "english": ["Short tempered"]
+        },
+        {
+            "polish": "Silny",
+            "english": ["Strong"]
+        },
+        {
+            "polish": "Słaby",
+            "english": ["Weak"]
+        },
+        {
+            "polish": "Najedzony",
+            "english": ["Full"]
+        },
+        {
+            "polish": "Niezdarny",
+            "english": ["Clumsy"]
+        },
+        {
+            "polish": "Ugodowy",
+            "english": ["Agreeable"]
+        },
+        {
+            "polish": "Uparty",
+            "english": ["Stubborn"]
+        },
+        {
+            "polish": "Oszczędny",
+            "english": ["Thrifty"]
+        }
+    ],
+    "nouns": [
+        {
+            "polish": "Widelec",
+            "english": ["Fork"]
+        },
+        {
+            "polish": "Pałeczki",
+            "english": ["Chopsticks"]
+        },
+        {
+            "polish": "Filiżanka",
+            "english": ["Cup"]
+        },
+        {
+            "polish": "Lampka",
+            "english": ["Wineglass"]
+        },
+        {
+            "polish": "Słoik",
+            "english": ["Jar"]
+        },
+        {
+            "polish": "Ścierka",
+            "english": ["Teacloth"]
+        },
+        {
+            "polish": "łyżka",
+            "english": ["Spoon"]
+        },
+        {
+            "polish": "łyżeczka",
+            "english": ["Teaspoon"]
+        },
+        {
+            "polish": "Szklanka",
+            "english": ["Glass"]
+        },
+        {
+            "polish": "Talerz",
+            "english": ["Plate"]
+        },
+        {
+            "polish": "Talerzyk",
+            "english": ["Small Plate"]
+        },
+        {
+            "polish": "Garnek",
+            "english": ["Pot"]
+        },
+        {
+            "polish": "Deska do krojenia",
+            "english": ["Chopping board"]
+        },
+        {
+            "polish": "Nóż",
+            "english": ["Knife"]
+        },
+        {
+            "polish": "Kubek",
+            "english": ["Mug"]
+        },
+        {
+            "polish": "Patelnia",
+            "english": ["Pan"]
+        },
+        {
+            "polish": "Poduszka",
+            "english": ["Pillow"]
+        },
+        {
+            "polish": "łóżko",
+            "english": ["Bed"]
+        },
+        {
+            "polish": "Lustro",
+            "english": ["Mirror"]
+        },
+        {
+            "polish": "Doniczka",
+            "english": ["Pot plant"]
+        },
+        {
+            "polish": "Kanapa",
+            "english": ["Sofa"]
+        },
+        {
+            "polish": "Radio",
+            "english": ["Radio"]
+        },
+        {
+            "polish": "Krzesło",
+            "english": ["Chair"]
+        },
+        {
+            "polish": "Stół",
+            "english": ["Table"]
+        },
+        {
+            "polish": "Szafa",
+            "english": ["Wardrobe"]
+        },
+        {
+            "polish": "Zegar",
+            "english": ["Clock"]
+        },
+        {
+            "polish": "Zegarek",
+            "english": ["Watch"]
+        },
+        {
+            "polish": "Półka",
+            "english": ["Shelf"]
+        },
+        {
+            "polish": "Okno",
+            "english": ["Window"]
+        },
+        {
+            "polish": "Kołdra",
+            "english": ["Doona"]
+        },
+        {
+            "polish": "Szafka",
+            "english": ["Cabinet"]
+        },
+        {
+            "polish": "Książka",
+            "english": ["Book"]
+        }
+    ],
+    "people": [
+        {
+            "polish": "Sąsiadka",
+            "english": ["Neighbour F"]
+        },
+        {
+            "polish": "Pasierb",
+            "english": ["Stepson"]
+        },
+        {
+            "polish": "Ojciec",
+            "english": ["Father"]
+        },
+        {
+            "polish": "Wujek",
+            "english": ["Uncle"]
+        },
+        {
+            "polish": "Ciocia",
+            "english": ["Auntie"]
+        },
+        {
+            "polish": "żona",
+            "english": ["Wife"]
+        },
+        {
+            "polish": "Maż",
+            "english": ["Husband"]
+        },
+        {
+            "polish": "Córka",
+            "english": ["Daughter"]
+        },
+        {
+            "polish": "Syn",
+            "english": ["Son"]
+        },
+        {
+            "polish": "Macocha",
+            "english": ["Step-mother"]
+        },
+        {
+            "polish": "Przyrodnia siostra",
+            "english": ["Half-sister"]
+        },
+        {
+            "polish": "Kuzyn",
+            "english": ["Cousin M"]
+        },
+        {
+            "polish": "Teściowa",
+            "english": ["Mother-in-law"]
+        },
+        {
+            "polish": "Teść",
+            "english": ["Father-in-law"]
+        },
+        {
+            "polish": "Przyrodni brat",
+            "english": ["Half-brother"]
+        },
+        {
+            "polish": "Dziewczyna",
+            "english": ["Girlfriend"]
+        },
+        {
+            "polish": "Chłopak",
+            "english": ["Boyfriend"]
+        },
+        {
+            "polish": "Narzeczona",
+            "english": ["Fiancé F"]
+        },
+        {
+            "polish": "Narzecony",
+            "english": ["Fiancé M"]
+        },
+        {
+            "polish": "Dziecko",
+            "english": ["Child"]
+        },
+        {
+            "polish": "Nauczycielka",
+            "english": ["Teacher F"]
+        },
+        {
+            "polish": "Koleżanka",
+            "english": ["Friend F"]
+        },
+        {
+            "polish": "Kolega",
+            "english": ["Friend M"]
+        },
+        {
+            "polish": "Szefowa",
+            "english": ["Boss F"]
+        },
+        {
+            "polish": "Przyjaciel",
+            "english": ["Close friend M"]
+        },
+        {
+            "polish": "Przejaciółka",
+            "english": ["Close friend F"]
+        }
     ]
 }
