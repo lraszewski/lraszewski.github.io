@@ -44,12 +44,13 @@ nav a {
 
 #answer {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--button-colour);
     border: none;
     border-radius: var(--button-border-radius);
     margin: 0;
     box-sizing: border-box;
+    margin-top: 15px;
 }
 
 .incorrect {
@@ -67,7 +68,7 @@ nav a {
 .options {
     display: grid;
     gap: var(--button-spacing);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 #prompt-header {
@@ -75,6 +76,11 @@ nav a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+#prompt {
+    min-width: 300px;
 }
 
 progress {
