@@ -241,7 +241,7 @@
             "english": "Young"
         },
         {
-            "polish": ["stary", "stara"],
+            "polish": ["Stary", "Stara"],
             "english": "Old"
         },
         {
@@ -411,6 +411,106 @@
         {
             "polish": ["Silny mentalnie", "Silna mentalnie"],
             "english": "Mentally strong"
+        },
+        {
+            "polish": "Zgrabna",
+            "english": "Shapely"
+        },
+        {
+            "polish": "Przystojny",
+            "english": "Handsome"
+        },
+        {
+            "polish": ["Zazdrosny", "Zazdrosna"],
+            "english": "Jealous"
+        },
+        {
+            "polish": ["Szczupły", "Szczupła"],
+            "english": "Slim"
+        },
+        {
+            "polish": "Średniej budowy",
+            "english": "Medium build"
+        },
+        {
+            "polish": ["Tęgi", "Tęga"],
+            "english": "Large build"
+        },
+        {
+            "polish": ["Wstydliwy", "Wstydliwa"],
+            "english": "Shy"
+        },
+        {
+            "polish": ["Pewny siebie", "Pewna siebie"],
+            "english": "Confident"
+        },
+        {
+            "polish": ["Wrażliwy", "Wrażliwa"],
+            "english": "Sensitive"
+        },
+        {
+            "polish": ["Oszczędny", "Oszczędna"],
+            "english": "Thrifty"
+        },
+        {
+            "polish": ["Rozrzutny", "Rozrzutna"],
+            "english": "Wasteful"
+        },
+        {
+            "polish": ["Dokuczliwy", "Dokuczliwa"],
+            "english": "Annoying"
+        },
+        {
+            "polish": ["Honorowy", "Honorowa"],
+            "english": "Honourable"
+        },
+        {
+            "polish": ["Odważny", "Odważna"],
+            "english": "Brave"
+        },
+        {
+            "polish": ["Bojaźliwy", "Bojaźliwa"],
+            "english": "Fearful"
+        },
+        {
+            "polish": ["Uparty", "Uparta"],
+            "english": "Stubborn"
+        },
+        {
+            "polish": ["Ugodowy", "Ugodowa"],
+            "english": "Agreeable"
+        },
+        {
+            "polish": ["Fajny", "Fajna"],
+            "english": "Cool"
+        },
+        {
+            "polish": ["Szeroki", "Szeroka"],
+            "english": "Wide"
+        },
+        {
+            "polish": ["Wąski", "Wąska"],
+            "english": "Narrow"
+        },
+        {
+            "polish": ["Brudny", "Brudna"],
+            "english": "Dirty"
+        },
+        {
+            "polish": ["Czysty", "Czysta"],
+            "english": "Clean"
+        },
+        {
+            "polish": ["Nowy", "Nowa"],
+            "english": "New"
+        },
+        {
+            "polish": ["Interesujący", "Interesująca"],
+            "english": "Interesting"
+        },
+        {
+            "polish": ["Nudny", "Nudna"],
+            "english": "Boring"
         }
     ],
     "nouns": [
