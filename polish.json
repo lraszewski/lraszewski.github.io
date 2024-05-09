@@ -2,11 +2,11 @@
     "phrases": [
         {
             "polish": "Na zdrowie",
-            "english": ["Cheers"]
+            "english": "Cheers"
         },
         {
             "polish": "Dzień dobry",
-            "english": ["Good day"]
+            "english": "Good day"
         },
         {
             "polish": "Przepraszam",
@@ -14,75 +14,83 @@
         },
         {
             "polish": "Proszę",
-            "english": ["Please"]
+            "english": "Please"
         },
         {
             "polish": "Dziękuję",
-            "english": ["Thank you"]
+            "english": "Thank you"
         },
         {
             "polish": "Proszę napisać na tablicy",
-            "english": ["Please write this on the whiteboard"]
+            "english": "Please write this on the whiteboard"
         },
         {
             "polish": "Proszę powtórzyć",
-            "english": ["Please repeat"]
+            "english": "Please repeat"
         },
         {
             "polish": "Proszę przeczytać",
-            "english": ["Please read this"]
+            "english": "Please read this"
         },
         {
             "polish": "Nie wiem",
-            "english": ["I don't know"]
+            "english": "I don't know"
         },
         {
             "polish": "Nie rozumiem",
-            "english": ["I don't understand"]
+            "english": "I don't understand"
         },
         {
             "polish": "jak jest po polsku",
-            "english": ["what is in Polish"]
+            "english": "what is in Polish"
         },
         {
             "polish": "Przejemność po mojej stronie",
-            "english": ["It's my pleasure"]
+            "english": "It's my pleasure"
         },
         {
             "polish": "Nie szkodzi",
-            "english": ["Nevermind"]
+            "english": "Nevermind"
         },
         {
             "polish": "Nie ma znaczenia",
-            "english": ["It doesn't matter"]
+            "english": "It doesn't matter"
         },
         {
             "polish": "ładnie wyglądasz",
-            "english": ["You look nice"]
+            "english": "You look nice"
         },
         {
             "polish": "Jak się masz?",
-            "english": ["How are you?"]
+            "english": "How are you?"
         },
         {
             "polish": "Jak się czujesz?",
-            "english": ["How are you feeling"]
+            "english": "How are you feeling"
         },
         {
             "polish": "Proszę częstuj się",
-            "english": ["Please help yourself"]
+            "english": "Please help yourself"
         },
         {
             "polish": "Kto to jest?",
-            "english": ["Who is that?"]
+            "english": "Who is that?"
         },
         {
             "polish": "Co to jest?",
-            "english": ["what is that?"]
+            "english": "what is that?"
         },
         {
             "polish": "Czy mówisz po angielsku?",
-            "english": ["Do you speak English?"]
+            "english": "Do you speak English?"
+        },
+        {
+            "polish": "Przepraszam za spóźnienie",
+            "english": "Sorry I'm late"
+        },
+        {
+            "polish": "miło cię poznać",
+            "english": "It's nice to see you"
         }
     ],
     "numbers": [
@@ -205,84 +213,204 @@
     ],
     "adjectives": [
         {
-            "polish": "Pracowity",
-            "english": ["Diligent", "Hardworking"]
+            "polish": ["Zdrowy", "Zdrowa"],
+            "english": "healthy"
         },
         {
-            "polish": "Zmęczony",
-            "english": ["Tired"]
+            "polish": ["Chory", "Chora"],
+            "english": "Sick"
         },
         {
-            "polish": "Wypoczęty",
-            "english": ["Refreshed"]
+            "polish": ["Leniwy", "Leniwa"],
+            "english": "Lazy"
+ 	    },
+        {
+            "polish": ["Pracowity", "Pracowita"],
+            "english": ["Diligent", "Hard-working"]
         },
         {
-            "polish": "Wesoły",
-            "english": ["Cheerful"]
+            "polish": ["Szczęśliwy", "Szczęśliwa"],
+            "english": "Happy"
+ 	    },
+        {
+            "polish": ["Nieszczęśliwy", "Nieszczęśliwa"],
+            "english": "Unhappy"
+ 	    },
+        {
+            "polish": ["Młody", "Młoda"],
+            "english": "Young"
         },
         {
-            "polish": "Głodny",
-            "english": ["Hungry"]
+            "polish": ["stary", "stara"],
+            "english": "Old"
         },
         {
-            "polish": "Wysoki",
-            "english": ["Tall"]
-        },
-        {
-            "polish": "Niski",
-            "english": ["Short"]
-        },
-        {
-            "polish": "średniego wzrostu",
-            "english": ["Medium height"]
-        },
-        {
-            "polish": "Młody",
-            "english": ["Young"]
+            "polish": "w podeszłym wieku", 
+            "english": "Elderly aged"
         },
         {
             "polish": "w średnim wieku",
-            "english": ["Middle ages"]
+            "english": "Middle aged"
         },
         {
-            "polish": "w Podeszłym wieku",
-            "english": ["Elderly"]
+            "polish": ["Samotny", "Samotna"],
+            "english": "Lonely"
+ 	    },
+        {
+            "polish": ["zły", "zła"],
+            "english": "Angry"
         },
         {
-            "polish": "Cierpliwy",
-            "english": ["Patient"]
+            "polish": ["Głodny", "Głodna"],
+            "english": "Hungry"
         },
         {
-            "polish": "Nerwowy",
-            "english": ["Short tempered"]
+            "polish": ["Najedzony", "Najedzona"],
+            "english": "Full"
         },
         {
-            "polish": "Silny",
-            "english": ["Strong"]
+            "polish": ["Zmęczony", "Zmęczona"],
+            "english": "Tired"
         },
         {
-            "polish": "Słaby",
-            "english": ["Weak"]
+            "polish": ["Wypoczęty", "Wypoczęta"],
+            "english": "Refreshed"
         },
         {
-            "polish": "Najedzony",
-            "english": ["Full"]
+            "polish": ["Cierpliwy", "Cierpliwa"],
+            "english": "Patient"
         },
         {
-            "polish": "Niezdarny",
-            "english": ["Clumsy"]
+            "polish": ["Naburmuszony", "Naburmuszona"],
+            "english": "Grumpy"
+ 	    },
+        {
+            "polish": ["Nerwowy", "Nerwowa"],
+            "english": "Short-tempered"
         },
         {
-            "polish": "Ugodowy",
-            "english": ["Agreeable"]
+            "polish": ["Smutny", "Smutna"],
+            "english": "Sad"
+ 	    },
+        {
+            "polish": ["Wesoły", "Wesoła"],
+            "english": "Cheerful"
         },
         {
-            "polish": "Uparty",
-            "english": ["Stubborn"]
+            "polish": ["Wysoki", "Wysoka"],
+            "english": "Tall"
         },
         {
-            "polish": "Oszczędny",
-            "english": ["Thrifty"]
+            "polish": ["Niski", "Niska"],
+            "english": "Short"
+        },
+        {
+            "polish": "średniego wzrostu", 
+            "english": "Medium height"
+        },
+        {
+            "polish": ["długi", "długa"],
+            "english": "long"
+        },
+        {
+            "polish": ["Zdenerwowany", "Zdenerwowana"],
+            "english": "Nervous"
+ 	    },
+        {
+            "polish": ["ładny", "ładna"],
+            "english": "Pretty"
+ 	    },
+        {
+            "polish": ["Piękny", "Piękna"],
+            "english": "Beautiful"
+ 	    },
+        {
+            "polish": ["Brzydki", "Brzydka"],
+            "english": "Ugly"
+ 	    },
+        {
+            "polish": ["Bogaty", "Bogata"],
+            "english": "Rich"
+ 	    },
+        {
+            "polish": ["średniozamożny", "średniozamożna"],
+            "english": "Middle class"
+        },
+        {
+            "polish": ["Biedny", "Biedna"],
+            "english": "Poor"
+ 	    },
+        {
+            "polish": ["Głupi", "Głupa"],
+            "english": "Stupid"
+ 	    },
+        {
+            "polish": ["Mądry", "Mądra"],
+            "english": ["Wise", "Clever"]
+ 	    },
+        {
+            "polish": ["Sprytny", "Sprytna"],
+            "english": "Smart"
+ 	    },
+        {
+            "polish": ["Niezdarny", "Niezdarna"],
+            "english": "Clumsy"
+        },
+        {
+            "polish": ["Zręczny", "Zręczna"],
+            "english": "Skillful"
+ 	    },
+        {
+            "polish": ["Miły", "Miła"],
+            "english": "Nice"
+ 	    },
+        {
+            "polish": ["Uprzejmy", "Uprzejma"],
+            "english": ["Courteous", "Polite"]
+ 	    },
+        {
+            "polish": ["Nieuprzejmy", "Nieuprzejma"],
+            "english": ["Impolite", "Rude"]
+ 	    },
+        {
+            "polish": ["Przejemny", "Przejemna"],
+            "english": "Pleasant"
+ 	    },
+        {
+            "polish": ["Nieprzejemny", "Nieprzejemna"],
+            "english": "Unpleasant"
+ 	    },
+        {
+            "polish": ["Atrakcyjny", "Atrakzyjna"],
+            "english": "Attractive"
+ 	    },
+        {
+            "polish": ["Spokojny", "Spokojna"],
+            "english": "Calm"
+ 	    },
+        {
+            "polish": ["Szczery", "Szczera"],
+            "english": "Honest"
+ 	    },
+        {
+            "polish": ["Gościnny", "Gościnna"],
+            "english": "Welcoming"
+ 	    },
+        {
+            "polish": ["Słaby", "Słaba"],
+            "english": "Weak"
+ 	    },
+        {
+            "polish": ["Słaby mentalnie", "Słaba mentalnie"],
+            "english": "Mentally WEAK"
+ 	    },
+        {
+            "polish": ["Silny", "Silna"],
+            "english": "Strong"
+ 	    },
+        {
+            "polish": ["Silny mentalnie", "Silna mentalnie"],
+            "english": "Mentally strong"
         }
     ],
     "nouns": [
