@@ -79,10 +79,6 @@ function getVocabSets() {
     return Array.from(document.querySelectorAll("input[name='vocabSets']:checked")).map((elem) => elem.value)
 }
 
-function getTestSize() {
-    return document.querySelector('input[name="testSize"]:checked').value;
-}
-
 function getTestType() {
     return document.querySelector('input[name="testType"]:checked').value;
 }
@@ -100,7 +96,6 @@ function generateTest() {
 
     // get test parameters
     vocabSets = getVocabSets();
-    testSize = getTestSize();
     testType = getTestType();
     testLanguage = getTestLanguage();
     secondsPerWord = getSecondsPerWord();
@@ -113,19 +108,16 @@ function generateTest() {
 
     // build, shuffle and trim test vocab
     test = []
-    while (test.length < testSize) {
-        vocabSets.forEach(set => {
-            if (vocab.hasOwnProperty(set)) {
-                test.push(...vocab[set]);
-            }
-        })
-    }
+    vocabSets.forEach(set => {
+        if (vocab.hasOwnProperty(set)) {
+            test.push(...vocab[set]);
+        }
+    })
     test = test.sort(() => Math.random() - 0.5)
-    test = test.slice(0, testSize);
 
     // reset test progress bar
     const progressBar = document.getElementById("testProgress");
-    progressBar.setAttribute("max", testSize);
+    progressBar.setAttribute("max", test.length);
     progressBar.setAttribute("value", 0);
 }
 
