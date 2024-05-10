@@ -511,6 +511,146 @@
         {
             "polish": ["Nudny", "Nudna"],
             "english": "Boring"
+        },
+        {
+            "polish": ["Ostry", "Ostra"],
+            "english": "Sharp"
+        },
+        {
+            "polish": ["Tępy", "Tępa"],
+            "english": "Blunt"
+        },
+        {
+            "polish": ["Smaczny", "Smaczna"],
+            "english": "Tasty"
+        },
+        {
+            "polish": ["Niesmaczny", "Niesmaczna"],
+            "english": "Not tasty"
+        },
+        {
+            "polish": ["Gorzki", "Gorzka"],
+            "english": "Bitter"
+        },
+        {
+            "polish": ["Słodki", "Słodka"],
+            "english": "Sweet"
+        },
+        {
+            "polish": ["Kwaśny", "Kwaśna"],
+            "english": "Sour"
+        },
+        {
+            "polish": ["Duży", "Duża"],
+            "english": "Big"
+        },
+        {
+            "polish": ["Mały", "Mała"],
+            "english": "Small"
+        },
+        {
+            "polish": ["Dobry", "Dobra"],
+            "english": "Good"
+        },
+        {
+            "polish": ["Niedobry", "Niedobra"],
+            "english": "Not good"
+        },
+        {
+            "polish": ["wielki", "Wielka"],
+            "english": "Great"
+        },
+        {
+            "polish": ["Ogromny", "Ogromna"],
+            "english": "Huge"
+        },
+        {
+            "polish": ["Dowcipny", "Dowcipna"],
+            "english": "Witty"
+        },
+        {
+            "polish": ["Poważny", "Poważna"],
+            "english": "Serious"
+        },
+        {
+            "polish": ["Jasny", "Jasna"],
+            "english": "Light"
+        },
+        {
+            "polish": ["Ciemny", "Ciemna"],
+            "english": "Dark"
+        },
+        {
+            "polish": ["Wygodny", "Wygodna"],
+            "english": "Comfortable"
+        },
+        {
+            "polish": ["Niewygodny", "Niewygodna"],
+            "english": "Uncomfortable"
+        },
+        {
+            "polish": ["Naiwny", "Naiwna"],
+            "english": "Naïve"
+        },
+        {
+            "polish": ["Zimny", "Zimna"],
+            "english": "Cold"
+        },
+        {
+            "polish": ["Ciepły", "Ciepłą"],
+            "english": "Warm"
+        },
+        {
+            "polish": ["Gorący", "Gorąca"],
+            "english": "Hot"
+        },
+        {
+            "polish": ["Australijski", "Australijska"],
+            "english": "Australian"
+        },
+        {
+            "polish": ["Polski", "Polska"],
+            "english": "Polish"
+        },
+        {
+            "polish": ["Niemiecki", "Niemiecka"],
+            "english": "German"
+        },
+        {
+            "polish": ["Świeży", "Świeża"],
+            "english": "Fresh"
+        },
+        {
+            "polish": ["Nieświeży", "Nieświeża"],
+            "english": "Not fresh"
+        },
+        {
+            "polish": ["Modny", "Modna"],
+            "english": "Fashionable"
+        },
+        {
+            "polish": ["Niemodny", "Niemodna"],
+            "english": "Unfashionable"
+        },
+        {
+            "polish": ["Przebiegły", "Przebiegła"],
+            "english": "Cunning"
+        },
+        {
+            "polish": ["Chytry", "Chytra"],
+            "english": "Sly"
+        },
+        {
+            "polish": ["Drogi", "Droga"],
+            "english": "Expensive"
+        },
+        {
+            "polish": ["Tani", "Tania"],
+            "english": "Cheap"
+        },
+        {
+            "polish": ["Skromny", "Skromna"],
+            "english": "Modest"
         }
     ],
     "nouns": [
