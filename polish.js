@@ -56,36 +56,10 @@ function format(item) {
 
 // Returns a list of possible answers as a comma separated string
 function joinAnswers(answers) {
-
     if (!Array.isArray(answers)) {
         return answers;
     }
-
-    if (answers.length == 0) {
-        return '';
-    }
-
-    if (answers.length == 1) {
-        return answers[0];
-    }
-
     return answers.join(', ')
-
- 
-
-
-
-
-    // if (answers.length === 0) {
-    //     return '';
-    // } else if (answers.length === 1) {
-    //     return answers[0];
-    // } else if (answers.length === 2) {
-    //     return answers.join(' or ');
-    // } else {
-    //     const lastWord = answers.pop();
-    //     return answers.join(', ') + ', or ' + lastWord;
-    // }
 }
 
 // Get JSON data from vocab file
