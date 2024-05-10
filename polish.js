@@ -1,4 +1,5 @@
 // global variables to store current prompt and its translation
+let currentQuestion = {};
 let currentPrompt = "";
 let currentTranslations = [];
 let incorrectState = false;
@@ -34,11 +35,21 @@ function checkAnswer() {
             document.getElementById('answer').value = '';
         }, 500);
     } else {
+        // Enter incorrect state
         incorrectState = true
         document.getElementById("answer").classList.add('incorrect');
         document.getElementById("expectedAnswer").classList.remove("hidden");
         document.getElementById("expectedAnswer").innerHTML = joinAnswers(currentTranslations);
         document.getElementById("incorrectMessage").classList.remove("hidden");
+
+        // Repeat the question in the test
+        test.splice(4, 0, currentQuestion);
+        index = Math.floor(Math.random() * (test.length - 10)) + 10;
+        test.splice(index, 0, currentQuestion);
+
+        // Update test size
+        const progressBar = document.getElementById("testProgress");
+        progressBar.setAttribute("max", test.length);
     }
 
     const progressBar = document.getElementById("testProgress");
@@ -130,6 +141,7 @@ function populatePrompt() {
 
     // grab a new question and populate
     question = test.pop();
+    currentQuestion = question;
     if (testLanguage == "polishToEnglish") {
         currentPrompt = question.polish;
         currentTranslations = question.english;
