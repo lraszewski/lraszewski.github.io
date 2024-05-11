@@ -140,7 +140,7 @@ function populatePrompt() {
     }
 
     // grab a new question and populate
-    question = test.pop();
+    question = test.shift();
     currentQuestion = question;
     if (testLanguage == "polishToEnglish") {
         currentPrompt = question.polish;
