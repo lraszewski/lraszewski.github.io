@@ -211,7 +211,7 @@
             "english": ["One Hundred", "100"]
         }
     ],
-    "adjectives": [
+    "adjectives-1": [
         {
             "polish": ["Zdrowy", "Zdrowa"],
             "english": "healthy"
@@ -246,7 +246,7 @@
         },
         {
             "polish": "w podeszłym wieku", 
-            "english": "Elderly aged"
+            "english": "Elderly"
         },
         {
             "polish": "w średnim wieku",
@@ -315,7 +315,9 @@
         {
             "polish": ["Zdenerwowany", "Zdenerwowana"],
             "english": "Nervous"
- 	    },
+ 	    }
+    ],
+    "adjectives-2": [
         {
             "polish": ["ładny", "ładna"],
             "english": "Pretty"
@@ -411,7 +413,9 @@
         {
             "polish": ["Silny mentalnie", "Silna mentalnie"],
             "english": "Mentally strong"
-        },
+        }
+    ],
+    "adjectives-3": [
         {
             "polish": "Zgrabna",
             "english": "Shapely"
@@ -511,7 +515,9 @@
         {
             "polish": ["Nudny", "Nudna"],
             "english": "Boring"
-        },
+        }
+    ],
+    "adjectives-4": [
         {
             "polish": ["Ostry", "Ostra"],
             "english": "Sharp"
