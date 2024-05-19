@@ -659,6 +659,64 @@
             "english": "Modest"
         }
     ],
+    "colours": [
+        {
+            "polish": ["Biały", "Biała", "Białe"],
+            "english": "White"
+        },
+        {
+            "polish": ["Zielony", "Zielona", "Zielone"],
+            "english": "Green"
+        },
+        {
+            "polish": ["Czerwony", "Czerwona", "Czerwone"],
+            "english": "Red"
+        },
+        {
+            "polish": ["Czarny", "Czarna", "Czarne"],
+            "english": "Black"
+        },
+        {
+            "polish": ["Pomarańczowy", "Pomarańczowa", "Pomarańczowe"],
+            "english": "Orange"
+        },
+        {
+            "polish": ["Fioletowy", "Fioletowa", "Fioletowe"],
+            "english": "Purple"
+        },
+        {
+            "polish": ["Srebrny", "Srebrna", "Srebrne"],
+            "english": "Silver"
+        },
+        {
+            "polish": ["Złoty", "Złota", "Złote"],
+            "english": "Gold"
+        },
+        {
+            "polish": ["Niebieski", "Niebieska", "Niebieske"],
+            "english": "Blue"
+        },
+        {
+            "polish": ["Żółty", "Żółta", "Żółte"],
+            "english": "Yellow"
+        },
+        {
+            "polish": ["Szary", "Szara", "Szare"],
+            "english": "Grey"
+        },
+        {
+            "polish": ["Różowy", "Różowa", "Różowe"],
+            "english": "Pink"
+        },
+        {
+            "polish": ["Brązowy", "Brązowa", "Brązowe"],
+            "english": "Brown"
+        },
+        {
+            "polish": ["Rudy", "Ruda", "Rude"],
+            "english": "Ginger"
+        }
+    ],
     "kitchen": [
         {
             "polish": "Widelec",
