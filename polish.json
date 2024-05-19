@@ -659,134 +659,172 @@
             "english": "Modest"
         }
     ],
-    "nouns": [
+    "kitchen": [
         {
             "polish": "Widelec",
-            "english": ["Fork"]
+            "english": "Fork"
         },
         {
             "polish": "Pałeczki",
-            "english": ["Chopsticks"]
+            "english": "Chopsticks"
         },
         {
             "polish": "Filiżanka",
-            "english": ["Cup"]
+            "english": "Cup"
         },
         {
             "polish": "Lampka",
-            "english": ["Wineglass"]
+            "english": "Wineglass"
         },
         {
             "polish": "Słoik",
-            "english": ["Jar"]
+            "english": "Jar"
         },
         {
             "polish": "Ścierka",
-            "english": ["Teacloth"]
+            "english": "Teacloth"
         },
         {
             "polish": "łyżka",
-            "english": ["Spoon"]
+            "english": "Spoon"
         },
         {
             "polish": "łyżeczka",
-            "english": ["Teaspoon"]
+            "english": "Teaspoon"
         },
         {
             "polish": "Szklanka",
-            "english": ["Glass"]
+            "english": "Glass"
         },
         {
             "polish": "Talerz",
-            "english": ["Plate"]
+            "english": "Plate"
         },
         {
             "polish": "Talerzyk",
-            "english": ["Small Plate"]
+            "english": "Small plate"
         },
         {
             "polish": "Garnek",
-            "english": ["Pot"]
+            "english": "Pot"
         },
         {
             "polish": "Deska do krojenia",
-            "english": ["Chopping board"]
+            "english": "Chopping board"
         },
         {
             "polish": "Nóż",
-            "english": ["Knife"]
+            "english": "Knife"
         },
         {
             "polish": "Kubek",
-            "english": ["Mug"]
+            "english": "Mug"
         },
         {
             "polish": "Patelnia",
-            "english": ["Pan"]
-        },
+            "english": "Pan"
+        }
+    ],
+    "living-room": [
         {
-            "polish": "Poduszka",
-            "english": ["Pillow"]
-        },
-        {
-            "polish": "łóżko",
-            "english": ["Bed"]
-        },
-        {
-            "polish": "Lustro",
-            "english": ["Mirror"]
-        },
-        {
-            "polish": "Doniczka",
-            "english": ["Pot plant"]
-        },
-        {
-            "polish": "Kanapa",
-            "english": ["Sofa"]
-        },
-        {
-            "polish": "Radio",
-            "english": ["Radio"]
-        },
-        {
-            "polish": "Krzesło",
-            "english": ["Chair"]
+            "polish": "Lampa",
+            "english": "Lamp"
         },
         {
             "polish": "Stół",
-            "english": ["Table"]
+            "english": "Table"
         },
         {
-            "polish": "Szafa",
-            "english": ["Wardrobe"]
+            "polish": "Krzesło",
+            "english": "Chair"
         },
         {
-            "polish": "Zegar",
-            "english": ["Clock"]
+            "polish": "Fotel",
+            "english": "Armchair"
         },
         {
-            "polish": "Zegarek",
-            "english": ["Watch"]
-        },
-        {
-            "polish": "Półka",
-            "english": ["Shelf"]
-        },
-        {
-            "polish": "Okno",
-            "english": ["Window"]
+            "polish": "Poduszka",
+            "english": "Pillow"
         },
         {
             "polish": "Kołdra",
-            "english": ["Doona"]
+            "english": "Doona"
+        },
+        {
+            "polish": "łóżko",
+            "english": "Bed"
+        },
+        {
+            "polish": "Szafa",
+            "english": "Wardrobe"
         },
         {
             "polish": "Szafka",
-            "english": ["Cabinet"]
+            "english": "Cabinet"
+        },
+        {
+            "polish": "Telewizor",
+            "english": "Television"
+        },
+        {
+            "polish": "Lustro",
+            "english": "Mirror"
+        },
+        {
+            "polish": "Radio",
+            "english": "Radio"
+        },
+        {
+            "polish": "Zegar",
+            "english": "Clock"
+        },
+        {
+            "polish": "Zegarek",
+            "english": "Watch"
+        },
+        {
+            "polish": "Obraz",
+            "english": "Picture"
         },
         {
             "polish": "Książka",
-            "english": ["Book"]
+            "english": "Book"
+        },
+        {
+            "polish": "Okno",
+            "english": "Window"
+        },
+        {
+            "polish": "Szuflada",
+            "english": "Drawer"
+        },
+        {
+            "polish": "stolik",
+            "english": "Small table"
+        },
+        {
+            "polish": "Doniczka",
+            "english": "Pot plant"
+        },
+        {
+            "polish": "Półka",
+            "english": "Shelf"
+        },
+        {
+            "polish": "Wazon",
+            "english": "Vase"
+        },
+        {
+            "polish": "Zasłony",
+            "english": "Curtains"
+        },
+        {
+            "polish": "Kanapa",
+            "english": "Sofa"
+        },
+        {
+            "polish": "Dywan",
+            "english": "Rug"
         }
     ],
     "people": [
