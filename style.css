@@ -1,8 +1,9 @@
 :root {
+    color-scheme: light dark;
     --button-spacing: 0.75rem;
     --nav-margin: 1.2rem;
-    --button-colour: rgb(249, 250, 251);
-    --button-hover-colour: rgb(235, 235, 235);
+    --button-colour: light-dark(rgb(249, 250, 251), rgb(6, 5, 4));
+    --button-hover-colour: light-dark(rgb(235, 235, 235), rgb(20, 20, 20));
     --button-border-radius: 0.5rem;
     --incorrect: rgb(230, 76, 76);
     --correct: rgb(81, 231, 126);
@@ -14,6 +15,8 @@ body {
     margin: auto;
     padding: 2rem;
     box-sizing: border-box;
+    background-color: light-dark(white, black);
+    color: light-dark(black, white);
 }
 
 a {
